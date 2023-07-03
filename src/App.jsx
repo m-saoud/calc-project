@@ -1,9 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container } from "react-bootstrap";
 
-function App() {
+function  App()  {
   const [calc, setcalc] = useState("");
   const [result, setresult] = useState("");
 
@@ -53,8 +52,7 @@ function App() {
   
  
   return (
-    <>
-      <Container>
+    <div className="app">
         <div className="calculater">
           <div className="display">
             {result ? <span>({result})</span> : ""} {calc || "0"}
@@ -77,8 +75,7 @@ function App() {
             <button onClick={calcEqula}>=</button>
           </div>
         </div>
-      </Container>
-    </>
+    </div>
   );
 }
 
