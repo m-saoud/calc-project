@@ -22,7 +22,7 @@ function App() {
 
   const creatDigites = () => {
     const digites = [];
-    for (let i = 0; i < 10; i++) {
+    for (let i = 1; i < 10; i++) {
       digites.push(
         <button onClick={() => updateCalc(i.toString())} key={i}>
           {i}
