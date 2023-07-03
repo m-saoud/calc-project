@@ -50,11 +50,7 @@ function App() {
     setresult("");
   };
 
-  const storgIn = () => {
-   
-    setresult("");
-    console.log(storgIn);
-  };
+  
  
   return (
     <>
@@ -71,8 +67,8 @@ function App() {
             <button onClick={() => updateCalc("-")}>-</button>
             <button onClick={deletLast}>Del</button>
             <button onClick={newOps}>CE</button>
-            <button onClick={storgIn}>+M</button>
-            <button onClick={localStorage.getItem({result})}>M</button>
+            {/* <button onClick={storgIn}>+M</button> */}
+            {/* <button onClick={localStorage.getItem({result})}>M</button> */}
           </div>
           <div className="digites">
             {creatDigites()}
